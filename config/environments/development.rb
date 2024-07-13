@@ -73,5 +73,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
-    config.hosts << "da4b4701ad6242f088b6686888626dcf.vfs.cloud9.ap-northeast-1.amazonaws.com"
+  config.hosts << "da4b4701ad6242f088b6686888626dcf.vfs.cloud9.ap-northeast-1.amazonaws.com"
+  #rails new meshiterro後、rails sで起動したが一番下の記述をここにコピーと書かれてあった
+  config.active_job.queue_adapter = :inline
+  #エラー回避のために必要な記述らしい
 end
